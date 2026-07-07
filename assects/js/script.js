@@ -1,20 +1,14 @@
-let cart = 0;
+import {ProductCard} from "./components/ProductCard.js";
 
-const buttons = document.querySelectorAll(".add-cart");
-
-buttons.forEach(button => {
-
-    button.addEventListener("click", function () {
-
-        cart++;
-
-        document.getElementById("cart-count").innerText = cart;
-
-        this.innerHTML = "Added ✔";
-
-        this.classList.remove("btn-primary");
-        this.classList.add("btn-success");
-
-    });
-
-});
+const product = {
+    id: "P101",
+    title: "Wireless Headphones",
+    category: "Electronics",
+    image: "assets/images/image.jpg",
+    mrp: 3999,
+    discount: 40,
+    price: 2399,
+    rating: 4.5,
+    reviews: 250,
+    stock: 15
+};
