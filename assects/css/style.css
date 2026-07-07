@@ -1,0 +1,382 @@
+/* ===========================
+   GLOBAL
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    color: #333;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.nav-link {
+    font-size: 17px;
+    transition: .3s;
+}
+
+.nav-link:hover {
+    color: #ffc107 !important;
+}
+
+/* ===========================
+   CAROUSEL
+=========================== */
+
+/* ===========================
+   CAROUSEL
+=========================== */
+
+.carousel-image {
+    height: 400px;
+    /* Reduced from 550px */
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, .45);
+    padding: 20px;
+    border-radius: 15px;
+    bottom: 50px;
+}
+
+.carousel-caption h1 {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 20px;
+}
+
+/* ===========================
+   SECTION TITLE
+=========================== */
+
+section h2 {
+    font-weight: bold;
+    color: #222;
+}
+
+/* ===========================
+   PRODUCT CARD
+=========================== */
+
+.product-card {
+
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: .4s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .12);
+    position: relative;
+    background: #fff;
+
+}
+
+.product-card:hover {
+
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
+
+}
+
+.card-img-top {
+
+    height: 250px;
+    object-fit: cover;
+
+}
+
+/* ===========================
+   PRODUCT ID
+=========================== */
+
+.product-id {
+
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-size: 13px;
+    z-index: 2;
+
+}
+
+/* ===========================
+   CATEGORY
+=========================== */
+
+.category {
+
+    color: #0d6efd;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+
+/* ===========================
+   PRODUCT TITLE
+=========================== */
+
+.card-body h5 {
+
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+/* ===========================
+   RATING
+=========================== */
+
+.rating {
+
+    color: #ff9800;
+    font-size: 18px;
+
+}
+
+.rating small {
+
+    color: #666;
+    font-size: 13px;
+
+}
+
+/* ===========================
+   PRICE
+=========================== */
+
+.mrp {
+
+    text-decoration: line-through;
+    color: gray;
+    margin-right: 10px;
+
+}
+
+.discount {
+
+    color: red;
+    font-weight: bold;
+
+}
+
+.price {
+
+    color: green;
+    font-size: 28px;
+    font-weight: bold;
+
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.add-cart {
+
+    margin-top: 15px;
+    border-radius: 30px;
+    transition: .3s;
+
+}
+
+.add-cart:hover {
+
+    transform: scale(1.05);
+
+}
+
+/* ===========================
+   CARD IMAGE ZOOM
+=========================== */
+
+.product-card img {
+
+    transition: .5s;
+
+}
+
+.product-card:hover img {
+
+    transform: scale(1.08);
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer {
+
+    margin-top: 70px;
+    background: #111;
+    color: #fff;
+
+}
+
+footer h5 {
+
+    font-size: 28px;
+    margin-bottom: 15px;
+
+}
+
+footer i {
+
+    cursor: pointer;
+    transition: .3s;
+
+}
+
+footer i:hover {
+
+    color: #ffc107;
+    transform: translateY(-5px);
+
+}
+
+/* ===========================
+   SEARCH BOX
+=========================== */
+
+.form-control {
+
+    border-radius: 30px;
+
+}
+
+.btn-warning {
+
+    border-radius: 30px;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px) {
+
+    .carousel-image {
+
+        height: 420px;
+
+    }
+
+    .carousel-caption h1 {
+
+        font-size: 40px;
+
+    }
+
+    .carousel-caption p {
+
+        font-size: 20px;
+
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .carousel-image {
+
+        height: 300px;
+
+    }
+
+    .carousel-caption {
+
+        bottom: 30px;
+        padding: 15px;
+
+    }
+
+    .carousel-caption h1 {
+
+        font-size: 26px;
+
+    }
+
+    .carousel-caption p {
+
+        font-size: 15px;
+
+    }
+
+    .navbar-brand {
+
+        font-size: 24px;
+
+    }
+
+    .card-img-top {
+
+        height: 220px;
+
+    }
+
+    .price {
+
+        font-size: 22px;
+
+    }
+
+}
+
+@media(max-width:576px) {
+
+    .carousel-image {
+
+        height: 220px;
+
+    }
+
+    .carousel-caption {
+
+        display: block;
+
+    }
+
+    .carousel-caption h1 {
+
+        font-size: 20px;
+
+    }
+
+    .carousel-caption p {
+
+        font-size: 13px;
+
+    }
+
+    .carousel-caption button {
+
+        font-size: 13px;
+        padding: 8px 18px;
+
+    }
+
+    .card-img-top {
+
+        height: 180px;
+
+    }
+
+}
